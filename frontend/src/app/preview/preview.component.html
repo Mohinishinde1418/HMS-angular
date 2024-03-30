@@ -1,0 +1,42 @@
+
+<section class="p-5 m-3 border">
+   <h2 class="text-center">Preview Page</h2>
+   <h1>{{total}}</h1>
+   <hr>
+   <section class="p-5 m-2 border ">
+     <h6 class="text-primary"> <u>Personal Details</u></h6>
+     <p>Name :{{fullData[0].pname}}</p>
+     <p>Age : {{fullData[0].page}} year</p>
+     <p>Decies : {{fullData[0].pdesic}}</p>
+     <p>Address : {{fullData[0].paddress}}</p>
+     <p> Contact No 1: {{fullData[0].mobile}}</p>
+     <p> Alt Contact No 2: {{fullData[0].altmobile}}</p>
+   </section>
+
+   <section class="p-5 m-2 border">
+    <h6 class="text-primary"> <u>Doctor Details</u></h6>
+    <p>Test's : {{fullData[0].doctor}}</p>
+     <p>Given Medical :{{fullData[0].doctor}} </p>
+   </section>
+
+
+  <section class="p-5 m-2 border">
+    <h6 class="text-primary"> <u>Medical Details</u></h6>
+    <p>Given Medical :  {{fullData[0].doctor}} </p>
+    <p>Prise : {{fullData[0].medical}}</p>
+  </section>
+
+  <section class="p-5 m-2 border">
+    <h6 class="text-primary"> <u>Account Details</u></h6>
+    <p>Doctor Prise : 500 -RS (Fee)</p>
+    <p>Medical Prise : {{fullData[0].medical}}</p>
+    <p>Other Charges : 20 -RS</p>
+    <p>GST : 50 -RS</p>
+    <p class="text-success"> <b>Total : </b> {{fullData[0].account}} -RS</p>
+
+  </section>
+
+    <div class="text-center">
+       <button class="btn btn-warning m-3" (click)="print1()">Print The Document</button>
+    </div>
+</section>

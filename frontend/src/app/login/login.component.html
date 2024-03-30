@@ -1,0 +1,21 @@
+<section class="row m-1 justify-content-center">
+  <div class="col-md-3 mt-5">
+     <form #fb="ngForm" (ngSubmit)="loginData(fb)" class="border p-2 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" 
+        alt="" width="60" height="60">
+        <h2 class="text-center">Login</h2>
+        <div class="form-group">
+            <label> Enter User Name</label>
+            <input type="text" name="username" ngModel class="form-control">
+        </div>
+        <div class="form-group">
+            <label> Enter User Password</label>
+            <input type="text" name="password" ngModel class="form-control">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary mx-2"> Login</button>
+            <button type="reset" class="btn btn-danger mx-2"> Cancel</button>
+        </div>
+     </form>
+  </div>
+</section>

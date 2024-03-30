@@ -1,0 +1,71 @@
+<section class="bg-dark text-white">
+    <!--Dashboar Area -->
+    <section class="row m-1">
+     <div class="col-md-6">
+      <h2>HMS Dashboard</h2>
+     </div>
+     <div class="col-md-6 text-right">
+
+        <span class="badge badge-primary text-white
+         badge-pill px-3 py-2 mt-2 mx-2">
+            <i class="fa fa-user"></i>
+        </span>
+       <span>Dr. V K Patil</span>
+     </div>
+    </section>
+</section>
+
+<section>
+    <!-- Aside + Right side area -->
+    <section class="row mx-1">
+     <div class="col-md-2" style="border-right:3px solid gray;">
+       <div>
+           <i class="fa fa-book "></i> Dashboard
+           <hr>
+           <ul class="nav nav-pills flex-column" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#Receptionist">Receptionist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#Doctor">Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#Medical">Medical</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#Account">Account</a>
+              </li>
+          </ul>
+       </div>
+     </div>
+     <div class="col-md-10">
+
+          <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="Receptionist" class="container tab-pane active"><br>
+      <h3>Receptionist</h3>
+      <app-receptionist></app-receptionist>
+    </div>
+    <div id="Doctor" class="container tab-pane fade"><br>
+      <h3>Doctor</h3>
+      <app-doctor></app-doctor>
+    </div>
+    <div id="Medical" class="container tab-pane fade"><br>
+      <h3>Medical</h3>
+     <app-medical></app-medical>
+    </div>
+    <div id="Account" class="container tab-pane fade"><br>
+        <h3>Account</h3>
+     <app-account> </app-account>
+      </div>
+  </div>
+
+
+     </div>
+    </section>
+</section>
+
+
+
+
+<app-footer></app-footer>
